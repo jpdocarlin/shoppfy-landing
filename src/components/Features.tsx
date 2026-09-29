@@ -4,16 +4,13 @@ import { motion } from "framer-motion";
 import {
   AlignLeft,
   Bot,
-  Calendar,
   Captions,
   Cloud,
-  Film,
   Flame,
   FolderKanban,
   Gauge,
   Image as ImageIcon,
   LayoutDashboard,
-  Link2,
   MousePointerClick,
   RefreshCw,
   TrendingUp,
@@ -28,34 +25,33 @@ type Feature = { icon: LucideIcon; label: string };
 
 const GROUPS: { title: string; description: string; items: Feature[] }[] = [
   {
-    title: "Descoberta de produtos",
-    description: "Nunca mais escolha um produto no achismo.",
+    title: "Catálogo de fornecedor",
+    description: "Nunca mais fique sem o que vender.",
     items: [
-      { icon: TrendingUp, label: "Produtos vencedores" },
-      { icon: Flame, label: "Produtos virais" },
-      { icon: Gauge, label: "Produtos em alta" },
-      { icon: TrendingUp, label: "Tendências em tempo real" },
+      { icon: TrendingUp, label: "Produtos validados" },
+      { icon: Gauge, label: "Estoque em tempo real" },
+      { icon: Flame, label: "Produtos em alta" },
+      { icon: Zap, label: "Entrega rápida" },
     ],
   },
   {
     title: "Inteligência artificial",
-    description: "O trabalho criativo, feito em segundos.",
+    description: "O anúncio pronto, feito em segundos.",
     items: [
-      { icon: Film, label: "IA para criação de vídeos" },
-      { icon: Bot, label: "IA para roteiros" },
-      { icon: Captions, label: "IA para legendas" },
-      { icon: Type, label: "IA para títulos" },
-      { icon: AlignLeft, label: "IA para descrições" },
+      { icon: Type, label: "Título gerado por IA" },
+      { icon: AlignLeft, label: "Descrição gerada por IA" },
+      { icon: Bot, label: "Categoria certa, sozinha" },
+      { icon: Captions, label: "Palavras-chave de busca" },
     ],
   },
   {
-    title: "Organização e conteúdo",
-    description: "Tudo no lugar certo, sempre à mão.",
+    title: "Publicação direta",
+    description: "Do produto ao anúncio no ar, sem sair do Shoppfy.",
     items: [
-      { icon: Calendar, label: "Calendário de postagens" },
-      { icon: ImageIcon, label: "Biblioteca de criativos" },
-      { icon: FolderKanban, label: "Organização de conteúdos" },
-      { icon: Link2, label: "Área de links de afiliado" },
+      { icon: ImageIcon, label: "Foto de capa automática" },
+      { icon: MousePointerClick, label: "Publicar com 1 clique" },
+      { icon: FolderKanban, label: "Histórico de anúncios" },
+      { icon: RefreshCw, label: "Estoque e peso preenchidos" },
     ],
   },
   {
@@ -78,8 +74,8 @@ export function Features() {
       <div className="container-px mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Funcionalidades"
-          title="Cada ferramenta que um afiliado sério precisa"
-          description="Organizado em quatro frentes — descoberta, criação, organização e plataforma — pra você nunca se perder no que fazer a seguir."
+          title="Cada ferramenta que um lojista sério precisa"
+          description="Organizado em quatro frentes — fornecedor, criação, publicação e plataforma — pra você nunca se perder no que fazer a seguir."
         />
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">

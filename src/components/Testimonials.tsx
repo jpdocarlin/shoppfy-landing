@@ -8,23 +8,23 @@ const TESTIMONIALS = [
   {
     initials: "MR",
     name: "Marina R.",
-    role: "Afiliada há 4 meses",
+    role: "Revendedora há 4 meses",
     quote:
-      "Eu travava justamente na parte de gravar vídeo. Com a IA do Shoppfy, publico todo dia sem aparecer e sem gastar tempo editando.",
+      "Eu travava justamente na parte de tirar foto boa e escrever descrição. Com o Shoppfy, escolho o produto e o anúncio sai pronto sozinho.",
   },
   {
     initials: "TA",
     name: "Thiago A.",
-    role: "Afiliado há 7 meses",
+    role: "Lojista há 7 meses",
     quote:
-      "O que mais mudou foi parar de escolher produto no chute. A curadoria já entrega o que tem chance real de vender.",
+      "O que mais mudou foi parar de montar anúncio do zero. Hoje eu publico em minutos, direto na minha loja Shopee.",
   },
   {
     initials: "CP",
     name: "Camila P.",
-    role: "Afiliada há 2 meses",
+    role: "Revendedora há 2 meses",
     quote:
-      "Comecei sem entender nada de ferramenta ou IA. O painel é simples o suficiente pra eu não me perder em nenhuma etapa.",
+      "Comecei sem entender nada de Shopee. O painel guia cada passo até o anúncio ir ao ar, sem eu me perder em nenhuma etapa.",
   },
 ];
 

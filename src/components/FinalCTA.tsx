@@ -22,11 +22,11 @@ export function FinalCTA() {
               Vagas abertas nesse lote
             </p>
             <h2 className="mx-auto max-w-2xl font-display text-[2.1rem] font-medium leading-tight tracking-[-0.02em] text-foreground sm:text-[2.6rem]">
-              Sua operação de afiliado merece infraestrutura de verdade
+              Pare de perder tempo montando anúncio manual
             </h2>
             <p className="mx-auto mt-5 max-w-lg text-[15.5px] text-muted">
-              Acesso liberado na hora, com 7 dias de garantia. Se não for pra você,
-              devolvemos o seu dinheiro.
+              Escolha o produto e o anúncio sai pronto — foto, título, descrição e
+              categoria. Publicado direto na sua loja Shopee, com 7 dias de garantia.
             </p>
             <div className="mt-9 flex justify-center">
               <Button
@@ -34,7 +34,7 @@ export function FinalCTA() {
                 size="lg"
                 icon={<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />}
               >
-                Quero começar agora
+                Quero criar meu anúncio
               </Button>
             </div>
           </div>

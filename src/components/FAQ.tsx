@@ -7,12 +7,16 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const FAQS = [
   {
-    q: "Preciso aparecer nos vídeos?",
-    a: "Não. A IA gera roteiro, legenda e o vídeo com o produto — muita gente publica sem gravar a própria voz ou rosto.",
+    q: "Preciso ter fornecedor próprio?",
+    a: "Não. O catálogo de fornecedor já vem dentro da plataforma — você escolhe o produto que quer vender e o Shoppfy cuida do resto, do custo ao estoque.",
+  },
+  {
+    q: "Preciso tirar foto ou escrever a descrição do anúncio?",
+    a: "Não. A IA gera o título e a descrição sozinha, e a foto do produto já vem pronta do catálogo do fornecedor — você só revisa e publica.",
   },
   {
     q: "Preciso entender de tecnologia ou IA?",
-    a: "Não. Todo o processo é guiado dentro da plataforma: escolher produto, gerar e publicar. A interface foi desenhada pra ser simples mesmo pra quem nunca usou nenhuma ferramenta parecida.",
+    a: "Não. Todo o processo é guiado dentro da plataforma: escolher produto, gerar o anúncio e publicar. A interface foi desenhada pra ser simples mesmo pra quem nunca usou nenhuma ferramenta parecida.",
   },
   {
     q: "Qual a diferença entre o plano mensal e o vitalício?",
@@ -24,7 +28,7 @@ const FAQS = [
   },
   {
     q: "Funciona só pra Shopee?",
-    a: "O foco principal hoje é Shopee, com estrutura pronta para expandir pra outros marketplaces.",
+    a: "Hoje o Shoppfy publica anúncio direto na Shopee e no Mercado Livre, com o mesmo catálogo de fornecedor e a mesma IA cuidando do anúncio nas duas.",
   },
 ];
 

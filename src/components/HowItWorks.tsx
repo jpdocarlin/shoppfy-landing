@@ -6,21 +6,21 @@ import { SectionHeading } from "@/components/SectionHeading";
 const STEPS = [
   {
     n: "01",
-    title: "Escolha um produto validado",
+    title: "Escolha um produto do fornecedor",
     description:
-      "Catálogo com produtos vencedores, virais e em alta, filtrados por dados reais de venda e entrega rápida.",
+      "Catálogo com milhares de produtos prontos pra revender, com preço de custo, estoque e fotos reais já incluídos.",
   },
   {
     n: "02",
-    title: "Gere link e vídeo com 1 clique",
+    title: "Gere o anúncio com 1 clique",
     description:
-      "A extensão cria seu link de afiliado sozinha. A IA gera roteiro, legenda, título e o vídeo pronto pra postar.",
+      "A IA escreve título e descrição e escolhe a categoria certa sozinha. Você só define sua margem de lucro.",
   },
   {
     n: "03",
-    title: "Publique e acompanhe o resultado",
+    title: "Publique direto na sua loja Shopee",
     description:
-      "Calendário de postagens, biblioteca de criativos e dashboard mostram exatamente o que está performando.",
+      "O anúncio vai ao ar com foto, título, descrição e preço prontos — sem copiar e colar nada no Seller Center.",
   },
 ];
 

@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { ArrowUpRight, Flame, Sparkles, TrendingUp } from "lucide-react";
 
 const CHART_POINTS = [18, 26, 22, 34, 30, 44, 40, 58, 52, 68, 64, 82];
@@ -48,26 +49,39 @@ function Sparkline() {
 const PRODUCTS = [
   { name: "Fone TWS Pro Max", tag: "Viral", trend: "+312%", color: "from-orange-lighter to-orange" },
   { name: "Organizador Modular", tag: "Em alta", trend: "+184%", color: "from-orange to-orange-light" },
-  { name: "Luminária LED RGB", tag: "IA pronta", trend: "+96%", color: "from-orange-light to-orange-lighter" },
+  { name: "Luminária LED RGB", tag: "Anúncio pronto", trend: "+96%", color: "from-orange-light to-orange-lighter" },
 ];
 
 export function DashboardMockup() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  // The tilt/float/badge loops below run forever by design, so once the
+  // user scrolls past the hero they'd otherwise keep animating (and
+  // costing frames) for the rest of the session. Pausing them outside the
+  // viewport keeps the exact same motion while visible with zero cost
+  // once it's off-screen.
+  const inView = useInView(containerRef, { margin: "-15% 0px -15% 0px" });
+
   return (
     <motion.div
+      ref={containerRef}
       initial={{ opacity: 0, y: 40, rotateX: 6, rotateY: -6 }}
-      animate={{
-        opacity: 1,
-        y: [0, -14, 0],
-        rotateX: [6, 3, 6],
-        rotateY: [-6, -3, -6],
-      }}
+      animate={
+        inView
+          ? {
+              opacity: 1,
+              y: [0, -14, 0],
+              rotateX: [6, 3, 6],
+              rotateY: [-6, -3, -6],
+            }
+          : { opacity: 1, y: 0, rotateX: 6, rotateY: -6 }
+      }
       transition={{
         opacity: { duration: 0.9, ease: "easeOut" },
         y: { duration: 7, repeat: Infinity, ease: "easeInOut" },
         rotateX: { duration: 9, repeat: Infinity, ease: "easeInOut" },
         rotateY: { duration: 9, repeat: Infinity, ease: "easeInOut" },
       }}
-      style={{ perspective: 1200, transformStyle: "preserve-3d" }}
+      style={{ perspective: 1200, transformStyle: "preserve-3d", willChange: "transform" }}
       className="relative mx-auto w-full max-w-[520px]"
     >
       <div className="glow -inset-8 bg-[radial-gradient(circle,rgba(255,107,0,0.35),transparent_70%)]" />
@@ -87,7 +101,7 @@ export function DashboardMockup() {
 
         <div className="mb-4 grid grid-cols-2 gap-3">
           <div className="rounded-xl border border-border bg-white/[0.02] p-4">
-            <p className="text-[11px] text-muted-2">Comissão hoje</p>
+            <p className="text-[11px] text-muted-2">Vendas hoje</p>
             <p className="font-display text-2xl font-medium text-foreground">
               R$ 1.284<span className="text-muted-2">,90</span>
             </p>
@@ -96,8 +110,8 @@ export function DashboardMockup() {
             </p>
           </div>
           <div className="rounded-xl border border-border bg-white/[0.02] p-4">
-            <p className="text-[11px] text-muted-2">Cliques nos links</p>
-            <p className="font-display text-2xl font-medium text-foreground">4.921</p>
+            <p className="text-[11px] text-muted-2">Anúncios publicados</p>
+            <p className="font-display text-2xl font-medium text-foreground">312</p>
             <div className="mt-2 -ml-1">
               <Sparkline />
             </div>
@@ -137,25 +151,27 @@ export function DashboardMockup() {
       </div>
 
       <motion.div
-        animate={{ y: [0, -10, 0], rotate: [0, 3, 0] }}
+        animate={inView ? { y: [0, -10, 0], rotate: [0, 3, 0] } : { y: 0, rotate: 0 }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        style={{ willChange: "transform" }}
         className="glass absolute -right-8 -top-6 flex items-center gap-2 rounded-xl px-3 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
       >
         <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[linear-gradient(135deg,#FF9E2C,#FF6B00)]">
           <Sparkles className="h-3.5 w-3.5 text-white" />
         </span>
         <div>
-          <p className="text-[11px] font-medium text-foreground">Vídeo gerado</p>
-          <p className="text-[10px] text-muted-2">pela IA em 12s</p>
+          <p className="text-[11px] font-medium text-foreground">Anúncio gerado</p>
+          <p className="text-[10px] text-muted-2">pela IA em 9s</p>
         </div>
       </motion.div>
 
       <motion.div
-        animate={{ y: [0, 12, 0] }}
+        animate={inView ? { y: [0, 12, 0] } : { y: 0 }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+        style={{ willChange: "transform" }}
         className="glass absolute -bottom-6 -left-8 rounded-xl px-3.5 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
       >
-        <p className="text-[11px] text-muted-2">Nível de afiliado</p>
+        <p className="text-[11px] text-muted-2">Nível da loja</p>
         <p className="font-display text-[13px] font-medium text-orange-lighter">Elite · Top 2%</p>
       </motion.div>
     </motion.div>

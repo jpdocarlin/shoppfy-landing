@@ -3,9 +3,9 @@ import "./globals.css";
 import { BackgroundFX } from "@/components/BackgroundFX";
 
 export const metadata: Metadata = {
-  title: "Shoppfy — O sistema operacional do afiliado Shopee",
+  title: "Shoppfy — Crie anúncios prontos na Shopee",
   description:
-    "Encontre produtos vencedores, crie vídeos com IA e gerencie seus links de afiliado numa única plataforma. Shoppfy: tecnologia de ponta para quem leva afiliação a sério.",
+    "Escolha um produto no catálogo do nosso fornecedor e publique seu anúncio na Shopee em poucos cliques — foto, título e descrição prontos por IA. Shoppfy: infraestrutura de ponta pra quem revende sério.",
 };
 
 export default function RootLayout({

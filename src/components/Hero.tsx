@@ -17,9 +17,9 @@ const fadeUp: Variants = {
 };
 
 const STATS = [
-  { value: "398+", label: "produtos validados" },
-  { value: "12s", label: "pra gerar 1 vídeo com IA" },
-  { value: "27k+", label: "links de afiliado gerenciados" },
+  { value: "1.300+", label: "produtos no catálogo do fornecedor" },
+  { value: "9s", label: "pra gerar título e descrição com IA" },
+  { value: "1 clique", label: "pra publicar direto na sua loja" },
 ];
 
 export function Hero() {
@@ -35,7 +35,7 @@ export function Hero() {
             className="glass mb-7 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[12.5px] text-muted"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-orange-lighter shadow-[0_0_8px_2px_rgba(255,158,44,0.6)]" />
-            A nova infraestrutura pro afiliado Shopee
+            A nova forma de criar anúncio na Shopee
           </motion.div>
 
           <motion.h1
@@ -45,9 +45,9 @@ export function Hero() {
             custom={1}
             className="font-display text-[2.6rem] font-medium leading-[1.05] tracking-[-0.03em] text-foreground sm:text-[3.4rem] lg:text-[3.75rem]"
           >
-            O sistema operacional
+            Anúncio pronto,
             <br />
-            de quem <span className="text-gradient">domina a Shopee</span>
+            direto na sua <span className="text-gradient">loja Shopee</span>
           </motion.h1>
 
           <motion.p
@@ -57,10 +57,10 @@ export function Hero() {
             custom={2}
             className="mt-6 max-w-xl text-[17px] leading-relaxed text-muted"
           >
-            Shoppfy encontra produtos vencedores, gera seu link de afiliado e
-            cria vídeos com IA — roteiro, legenda e título inclusos. Uma
-            plataforma, zero trabalho manual, resultado de quem trata isso
-            como negócio.
+            Escolha um produto no catálogo do nosso fornecedor e o Shoppfy
+            gera a foto, o título e a descrição do anúncio sozinho — e
+            publica direto na sua loja Shopee. Poucos cliques, zero trabalho
+            manual.
           </motion.p>
 
           <motion.div

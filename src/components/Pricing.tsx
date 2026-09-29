@@ -7,10 +7,10 @@ import { SectionHeading } from "@/components/SectionHeading";
 
 const COMMON = [
   "Acesso completo à plataforma",
-  "Curadoria de produtos vencedores e virais",
-  "IA para vídeos, roteiros, legendas e títulos",
-  "Extensão de link automático",
-  "Calendário de postagens e biblioteca de criativos",
+  "Catálogo de fornecedor com produtos validados",
+  "IA para título, descrição e categoria do anúncio",
+  "Publicação direta na sua loja Shopee",
+  "Calculadora de preço e margem de lucro",
   "Dashboard de desempenho",
 ];
 

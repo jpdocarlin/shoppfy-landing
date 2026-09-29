@@ -5,11 +5,11 @@ import { Check, X } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const ROWS = [
-  { label: "Escolha de produto", without: "Tentativa e erro", with: "Curadoria validada por dados" },
-  { label: "Link de afiliado", without: "Copiar e colar manualmente", with: "Gerado sozinho, 1 clique" },
-  { label: "Criação de vídeo", without: "Precisa aparecer e editar", with: "IA gera tudo em segundos" },
-  { label: "Organização", without: "Planilha e bloco de notas", with: "Painel único e automático" },
-  { label: "Tempo até o resultado", without: "Semanas de tentativa", with: "Minutos" },
+  { label: "Escolha de produto", without: "Tentativa e erro", with: "Catálogo de fornecedor validado" },
+  { label: "Foto, título e descrição", without: "Você mesmo escreve e fotografa", with: "IA gera tudo sozinha" },
+  { label: "Categoria do anúncio", without: "Escolher na mão, risco de errar", with: "Detectada automaticamente" },
+  { label: "Publicação", without: "Copiar e colar no Seller Center", with: "1 clique, direto na sua loja" },
+  { label: "Tempo até o anúncio no ar", without: "Horas por produto", with: "Minutos" },
 ];
 
 export function Comparison() {
