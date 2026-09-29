@@ -64,24 +64,17 @@ export function DashboardMockup() {
   return (
     <motion.div
       ref={containerRef}
-      initial={{ opacity: 0, y: 40, rotateX: 6, rotateY: -6 }}
+      initial={{ opacity: 0, y: 40 }}
       animate={
         inView
-          ? {
-              opacity: 1,
-              y: [0, -14, 0],
-              rotateX: [6, 3, 6],
-              rotateY: [-6, -3, -6],
-            }
-          : { opacity: 1, y: 0, rotateX: 6, rotateY: -6 }
+          ? { opacity: 1, y: [0, -14, 0] }
+          : { opacity: 1, y: 0 }
       }
       transition={{
         opacity: { duration: 0.9, ease: "easeOut" },
         y: { duration: 7, repeat: Infinity, ease: "easeInOut" },
-        rotateX: { duration: 9, repeat: Infinity, ease: "easeInOut" },
-        rotateY: { duration: 9, repeat: Infinity, ease: "easeInOut" },
       }}
-      style={{ perspective: 1200, transformStyle: "preserve-3d", willChange: "transform" }}
+      style={{ willChange: "transform" }}
       className="relative mx-auto w-full max-w-[520px]"
     >
       <div className="glow -inset-8 bg-[radial-gradient(circle,rgba(255,107,0,0.35),transparent_70%)]" />
@@ -154,7 +147,7 @@ export function DashboardMockup() {
         animate={inView ? { y: [0, -10, 0], rotate: [0, 3, 0] } : { y: 0, rotate: 0 }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         style={{ willChange: "transform" }}
-        className="glass absolute -right-8 -top-6 flex items-center gap-2 rounded-xl px-3 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
+        className="absolute -right-8 -top-6 flex items-center gap-2 rounded-xl border border-border bg-[#141416] px-3 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
       >
         <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[linear-gradient(135deg,#FF9E2C,#FF6B00)]">
           <Sparkles className="h-3.5 w-3.5 text-white" />
@@ -169,7 +162,7 @@ export function DashboardMockup() {
         animate={inView ? { y: [0, 12, 0] } : { y: 0 }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
         style={{ willChange: "transform" }}
-        className="glass absolute -bottom-6 -left-8 rounded-xl px-3.5 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
+        className="absolute -bottom-6 -left-8 rounded-xl border border-border bg-[#141416] px-3.5 py-2.5 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)]"
       >
         <p className="text-[11px] text-muted-2">Nível da loja</p>
         <p className="font-display text-[13px] font-medium text-orange-lighter">Elite · Top 2%</p>
