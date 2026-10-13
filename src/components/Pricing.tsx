@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/SectionHeading";
+import { DEFAULT_CHECKOUT } from "@/lib/affiliates";
 
 const COMMON = [
   "Acesso completo à plataforma",
@@ -14,7 +15,13 @@ const COMMON = [
   "Dashboard de desempenho",
 ];
 
-export function Pricing() {
+export function Pricing({
+  monthlyHref = DEFAULT_CHECKOUT.monthly,
+  lifetimeHref = DEFAULT_CHECKOUT.lifetime,
+}: {
+  monthlyHref?: string;
+  lifetimeHref?: string;
+}) {
   return (
     <section id="planos" className="section relative">
       <div className="container-px mx-auto max-w-5xl">
@@ -54,7 +61,7 @@ export function Pricing() {
             </ul>
 
             <Button
-              href="https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu"
+              href={monthlyHref}
               variant="secondary"
               size="lg"
               className="w-full justify-center"
@@ -100,7 +107,7 @@ export function Pricing() {
             </ul>
 
             <Button
-              href="https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s"
+              href={lifetimeHref}
               size="lg"
               className="w-full justify-center"
             >
