@@ -15,4 +15,10 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
     lifetime:
       "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=1kt9m1r&offer=qlfvx7s",
   },
+  store: {
+    monthly:
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=4uwti8a&offer=wrtzxwu",
+    lifetime:
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=4uwti8a&offer=qlfvx7s",
+  },
 };
