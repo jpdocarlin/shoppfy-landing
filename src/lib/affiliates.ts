@@ -24,8 +24,8 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
   // shoppfy.site/shop e shop.shoppfy.site (rewrite em next.config.ts).
   shop: {
     monthly:
-      "https://checkout.applyfy.com.br/checkout/cmow2y5if02ce1ylqgwa5pmo7?code=rb0ks0z&offer=1MVF1H1",
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=1ayti1x&offer=wrtzxwu",
     lifetime:
-      "https://checkout.applyfy.com.br/checkout/cmow2y5if02ce1ylqgwa5pmo7?code=rb0ks0z&offer=2TF00TB",
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=1ayti1x&offer=qlfvx7s",
   },
 };
