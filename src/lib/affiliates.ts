@@ -21,4 +21,11 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
     lifetime:
       "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=4uwti8a&offer=qlfvx7s",
   },
+  // shoppfy.site/shop e shop.shoppfy.site (rewrite em next.config.ts).
+  shop: {
+    monthly:
+      "https://checkout.applyfy.com.br/checkout/cmow2y5if02ce1ylqgwa5pmo7?code=rb0ks0z&offer=1MVF1H1",
+    lifetime:
+      "https://checkout.applyfy.com.br/checkout/cmow2y5if02ce1ylqgwa5pmo7?code=rb0ks0z&offer=2TF00TB",
+  },
 };
