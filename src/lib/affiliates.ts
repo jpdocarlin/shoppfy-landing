@@ -28,4 +28,12 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
     lifetime:
       "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?code=1ayti1x&offer=qlfvx7s",
   },
+  // shoppfy.site/meta: leads dos anúncios da Meta (Campanha 1, nov/2026). Sem afiliado;
+  // a UTM chega no webhook da Applyfy (trackProps) e separa essas vendas das da live.
+  meta: {
+    monthly:
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26",
+    lifetime:
+      "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26",
+  },
 };
