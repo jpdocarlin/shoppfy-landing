@@ -36,4 +36,6 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
     lifetime:
       "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26",
   },
+  // shoppfy.site/tiktok: leads dos anuncios do TikTok (Teste 1, nov/2026). Sem afiliado; a UTM separa essas vendas.
+  tiktok: { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=tiktok&utm_medium=whatsapp&utm_campaign=teste1-shopee-nov26", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=tiktok&utm_medium=whatsapp&utm_campaign=teste1-shopee-nov26" },
 };
