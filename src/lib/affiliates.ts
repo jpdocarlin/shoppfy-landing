@@ -38,4 +38,8 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
   },
   // shoppfy.site/tiktok: leads dos anuncios do TikTok (Teste 1, nov/2026). Sem afiliado; a UTM separa essas vendas.
   tiktok: { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=tiktok&utm_medium=whatsapp&utm_campaign=teste1-shopee-nov26", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=tiktok&utm_medium=whatsapp&utm_campaign=teste1-shopee-nov26" },
+  // shoppfy.site/meta-fb2, /meta-g2 e /meta-g3: um link por anuncio da Meta (nov/2026). utm_content diz qual video vendeu.
+  "meta-fb2": { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=fb2", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=fb2" },
+  "meta-g2": { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=g2", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=g2" },
+  "meta-g3": { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=g3", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=whatsapp&utm_campaign=c1-shopee-nov26&utm_content=g3" },
 };
