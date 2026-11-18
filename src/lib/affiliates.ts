@@ -48,4 +48,6 @@ export const AFFILIATES: Record<string, CheckoutLinks> = {
   "diag-g3": { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=meta&utm_medium=diagnostico&utm_campaign=site-diag-nov26&utm_content=diag-g3", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=meta&utm_medium=diagnostico&utm_campaign=site-diag-nov26&utm_content=diag-g3" },
   // Leads que vieram pelo YouTube (ref: yt)
   "yt": { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=youtube&utm_medium=diagnostico&utm_campaign=yt-organico&utm_content=yt", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=youtube&utm_medium=diagnostico&utm_campaign=yt-organico&utm_content=yt" },
+  // Grupo gratuito do WhatsApp (leads que chegaram ao pitch e nao compraram), nov/2026
+  comunidade: { monthly: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=wrtzxwu&utm_source=whatsapp&utm_medium=grupo&utm_campaign=comunidade-nov26&utm_content=comunidade", lifetime: "https://checkout.applyfy.com.br/checkout/cmrujoz4g08o101oruu9qhwnu?offer=qlfvx7s&utm_source=whatsapp&utm_medium=grupo&utm_campaign=comunidade-nov26&utm_content=comunidade" },
 };
